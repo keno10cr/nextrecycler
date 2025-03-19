@@ -3,6 +3,14 @@ import './styles.css'; // Import your global CSS
 export const metadata = {
     title: 'NextRecycler',
     description: 'Recycling app made with Next.js',
+    openGraph: {
+        images: [
+            {
+                url: 'https://www.datocms-assets.com/157063/1742343387-top-recycler-logo-full-crown.png',
+                alt: 'NextRecycler Logo',
+            },
+        ],
+    },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

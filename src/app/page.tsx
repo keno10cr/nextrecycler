@@ -12,6 +12,9 @@ export default async function Home() {
             allPages(filter: { label: { eq: "homePage" } }) {
                 title
                 description
+                logo {
+                    url
+                }
             }
         }
     `;
@@ -30,8 +33,9 @@ export default async function Home() {
                     </ul>
                 </nav>
                 <main className="main">
+                    <img src={data.allPages[0].logo.url} alt="Logo" className="logo" />
                     <h1>{data.allPages[0].title}</h1>
-                    <p>{data.allPages[0].description}</p>
+                    <p>{data.allPages[0].description}</p> 
                 </main>
             </div>
         );
