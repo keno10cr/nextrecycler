@@ -80,3 +80,10 @@ body {
     font-size: 2rem;
     margin-top: 2rem;
 }
+
+/* Logo from DatoCMS*/
+.logo {
+    max-width: 200px;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
